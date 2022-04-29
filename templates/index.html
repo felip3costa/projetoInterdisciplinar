@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="cadastro">Cadastro da escola:</div>
+
+    <form>
+        <div>
+            <label for="nEscola">Nome da escola:</label>
+            <input type="text" id="nEscola">
+        </div>
+        <div>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco">
+        </div>
+        <div>
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" id="cnpj">
+        </div>
+        <div>
+            <label for="qTurma">Quantidade de turmas:</label>
+            <input type="text" id="qTurma">
+        </div>
+        <div>
+            <label for="qAluno">Quantidade de alunos:</label>
+            <input type="text" id="qAluno">
+        </div>
+    </form>
+
+    <br>
+
+    <div class="cadastro">Cadastro de alunos:</div>
+
+    <form>
+        <div>
+            <label for="nomeAluno">Nome do aluno: </label>
+            <input type="text" id="nomeAluno">
+        </div>
+        <div>
+            <label for="rg">RG:</label>
+            <input type="text" id="rg">
+        </div>
+        <div>
+            <label for="turma">Turma:</label>
+            <input type="text" id="turma">
+        </div>
+        <div>
+            <label for="sala">Sala:</label>
+            <input type="text" id="sala">
+        </div>
+    </form>
+    <div class="upload">
+        <div class="textUpload">Upload do cadastro de aluno. “Excel”</div>
+    </div>
+
+{%  endblock %}
