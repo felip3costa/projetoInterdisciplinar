@@ -6,7 +6,6 @@ from vota_escola.models import *
 # Register your models here.
 admin.site.register(Escola)
 admin.site.register(Turma)
-admin.site.register(Sala)
 admin.site.register(Aluno)
 admin.site.register(Candidato)
 admin.site.register(AnoEleicao)
