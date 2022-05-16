@@ -1,3 +1,8 @@
+'''
+Code by Rafael Henrique
+https://bit.ly/2FLDHsH
+'''
+
 import csv
 from vota_escola.models import Aluno
 
