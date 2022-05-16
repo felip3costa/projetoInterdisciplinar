@@ -1,4 +1,9 @@
-
+@font-face {
+    font-family: 'Forte';
+    src: url("font/forte.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .fonte-base {
     /* FONTE BASE DO PROJETO */
