@@ -6,7 +6,10 @@ import csv
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html')
+    dados = {
+        'titulo_pagina': 'Página Inicial'
+    }
+    return render(request, 'home.html', dados)
 
 
 def retorno(request):
