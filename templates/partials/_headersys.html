@@ -9,20 +9,17 @@
                     <li><a class="nav-link scrollto active" href="{% url 'home' %}">Minha Escola</a></li>
                     <li class="dropdown"><a href="#"><span>Eleições</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="#">Eleitorado</a></li>
-                            <li><a href="#">Resultados final / parcial</a></li>
+                            <li><a href="{% url 'e_anoeleitoral' %}">Ano Eleitoral</a></li>
+                            <li><a href="{% url 'e_resultado' %}">Resultados</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="#"><span>Ajustes</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="#"><span>Administração</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="#">Cadastro aluno</a></li>
-                            <li><a href="#">Cadastro turmas</a></li>
-                            <li class="dropdown"><a href="#"><span>Eleições</span> <i class="bi bi-chevron-down"></i></a>
-                                <ul>
-                                    <li><a href="#">Abrir ano eleitoral</a></li>
-                                    <li><a href="#">Definir período eleitoral</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="{% url 'e_alunos' %}">Cadastro de Alunos</a></li>
+                            <li><a href="{% url 'e_turmas' %}">Cadastro de Turmas</a></li>
+                            <hr>
+
+                            <li><a href="{% url 'e_info' %}">Meus Dados</a></li>
                         </ul>
                     </li>
                 </ul>
