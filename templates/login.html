@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section id="hero" class="d-flex align-items-center bg-app">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 d-flex flex-column justify-content-center pt-lg-0 order-2 rounded order-lg-1 bg-light" data-aos="fade-up" data-aos-delay="200">
+                    <forms>
+                        <div class="mb-3 pt-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">
+                                Nunca compartilhe seu e-mail de login com outra pessoa.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </forms>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

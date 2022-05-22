@@ -1,28 +1,177 @@
 {% extends 'base.html' %}
 {% block content %}
-    <section class="container">
-        <div class="row mt-3">
-            <div class="col-sm bg-light">
-                <div class="row m-3">
-                    <img src="static/images/exerca_cidadania.png">
+    <section id="hero" class="d-flex align-items-center bg-app">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                    <h1>Melhor solução para sua escola</h1>
+                    <h2>Um sistema totalmente voltado para eleição de representantes de turmas.</h2>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="#about" class="btn-get-started scrollto">Iniciar</a>
+                    </div>
                 </div>
-                <div class="row m-3">
-                    <button type="button" class="container btn btn-outline-dark" onclick="location.href='{% url "cadastro_escola" %}'">Cadastro Escola</button>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="row m-3">
-                    <img src="static/images/vote_consciente.png">
-                </div>
-            </div>
-            <div class="col-sm bg-light">
-                <div class="row m-3">
-                    <img src="static/images/mala_muito.png">
-                </div>
-                <div class="row m-3">
-                    <button type="button" class=" container btn btn-outline-dark" onclick="location.href='{% url "cadastro_aluno" %}'">Cadastro Aluno</button>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="static/images/vote_consciente.png" class="img-fluid animated" alt="">
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container container-fluid" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+            <div class="content">
+              <h3>Com o Vota Escola <strong>fica fácil e divertido exercer a cidadania.</strong></h3>
+              <p>
+                Ainda está com dúvida? Veja alguns dos nossos pontos fortes.
+              </p>
+            </div>
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Auditoria <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      Os dados dos votos são guardados numa caixinha a parte e com ele é guardado o eleitor, candidato, dia e hora que o voto foi feito.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Sem tempinho a mais<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                        Restrinja a data de início e término das eleições e votos. Com esse controle, sua escola não perderá um prazo.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Mais tempinho pra mim <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                        A secretaria tem outros assuntos pra resolver, então deixa de perder tempo calculando voto, nós fazemos tudo isso pra você
+                        e ainda geramos um gráfico por turma, então é só imprimir e colocar no seu quadro de notícias =)
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("static/images/mala_muito.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+      </div>
+    </section><!-- End Why Us Section -->
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Projeto Interdisciplinar</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="#" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ana Rodrigues</h4>
+                <span>{Título do membro}</span>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="#" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Caio Amorim</h4>
+                <span>{Título do membro}</span>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="#" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Felipe Costa</h4>
+                <span>Dev Full Stack</span>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="#" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Gustavo Castro</h4>
+                <span>{Título do membro}</span>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="#" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Lucas Santos</h4>
+                <span>{Título do membro}</span>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="#" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Luiz Rodrigues</h4>
+                <span>{Título do membro}</span>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
 {% endblock %}

@@ -1,6 +1,9 @@
 from django.db import models
+from django.contrib.auth.models import User
+
 
 class Escola(models.Model):
+    userid = models.ForeignKey(User, on_delete=models.CASCADE, null=False)
     nome_escola = models.CharField(max_length=100, null=False)
     rua = models.CharField(max_length=80, null=False)
     numero = models.IntegerField(null=False)
@@ -9,7 +12,6 @@ class Escola(models.Model):
     cidade = models.CharField(max_length=40, null=True, default=None)
     estado = models.CharField(max_length=40, null=True, default=None)
     cnpj = models.CharField(max_length=18, null=False, unique=True)
-    password = models.CharField(max_length=32, null=False)
 
     def __str__(self):
         return self.nome_escola

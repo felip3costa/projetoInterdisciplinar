@@ -14,8 +14,9 @@
     color: black;
     font-family: Forte, serif;
 }
-body {
-    padding-top: 58px;
+
+.bg-app {
+  background: #37517e;
 }
 
 .background {

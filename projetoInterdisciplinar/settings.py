@@ -76,6 +76,7 @@ WSGI_APPLICATION = 'projetoInterdisciplinar.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# USE SQLITE TO RUN TESTS
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',

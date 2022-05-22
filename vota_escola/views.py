@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from vota_escola.models import *
-import csv
+from datetime import datetime
 
 
 # Create your views here.
@@ -45,6 +45,7 @@ def cnpj_valido(request, cnpj, pagina):
 
 def cadastrar_escola(request):
     if request.method == 'POST':
+        email = request.POST['email']
         nome_escola = request.POST['nome_escola']
         rua = request.POST['rua']
         numero = request.POST['numero']
@@ -59,7 +60,6 @@ def cadastrar_escola(request):
         campo_vazio(request, 'Nome Escola','cadastro_escola')
         password_valido(request, password, repassword, 'cadastro_escola')
         cnpj_valido(request,cnpj, 'cadastro_escola')
-
 
         escola = Escola(
             nome_escola=nome_escola,
@@ -88,3 +88,10 @@ def cadastrar_aluno(request):
     messages.success(request, 'Usuário cadastrado com sucesso')
     return redirect(request, 'retorno')
 
+
+def login(request):
+    dados = {
+        'nome_formulario': 'login',
+        'titulo_pagina': 'Acesso ao ambiente'
+    }
+    return render(request, 'login.html', dados)
