@@ -1,0 +1,28 @@
+{% block menu %}
+    <div class="text-center rounded bg-light mb-2 pt-1 pb-1">
+        <h4>Administração</h4>
+    </div>
+    <div class="row">
+        <div class="col col-sm-2 m-2">
+            <a href="{% url 'e_info' %}"><img src="static/images/icones/dados.svg" class="img-fluid"></a>
+        </div>
+        <div class="col col-sm-2 m-2 mb-2">
+            <a href="{% url 'e_turmas' %}"><img src="static/images/icones/turma.svg" class="img-fluid"></a>
+        </div>
+        <div class="col col-sm-2 m-2 mb-2">
+            <a href="{% url 'e_alunos' %}"><img src="static/images/icones/aluno.svg" class="img-fluid"></a>
+        </div>
+    </div>
+
+    <div class="text-center rounded bg-light mt-3 mb-2 pt-1 pb-1">
+        <h4>Eleições</h4>
+    </div>
+    <div class="row">
+        <div class="col col-sm-2 m-2">
+            <a href="{% url 'e_anoeleitoral' %}"><img src="static/images/icones/calendario.svg" class="img-fluid"></a>
+        </div>
+        <div class="col col-sm-2 m-2 mb-2">
+            <a href="{% url 'e_resultado' %}"><img src="static/images/icones/resultados.svg" class="img-fluid"></a>
+        </div>
+    </div>
+{% endblock %}

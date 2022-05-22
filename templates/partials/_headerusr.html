@@ -1,0 +1,29 @@
+{% block content %}
+    <header id="header" class="fixed-top bg-app">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto fonte-base"><a href="{% url 'home' %}">Vota Escola</a></h1>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="{% url 'home' %}">Início</a></li>
+                    <li class="dropdown"><a href="#"><span>Eleições</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Candidatar-se</a></li>
+                            <li><a href="#">Votar</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#"><span>Opções</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Meus dados</a></li>
+                            <li><a class="text-danger" href="#">Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+        </div>
+    </header>
+
+{% endblock %}

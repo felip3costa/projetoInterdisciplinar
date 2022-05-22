@@ -2,20 +2,20 @@
 {% block content %}
     <section id="hero" class="d-flex align-items-center bg-app">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 d-flex flex-column justify-content-center pt-lg-0 order-2 rounded order-lg-1 bg-light" data-aos="fade-up" data-aos-delay="200">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-4 d-flex flex-column justify-content-center pt-lg-0 order-2 order-lg-1 rounded bg-light" data-aos="fade-up" data-aos-delay="200">
                     <forms>
-                        <div class="mb-3 pt-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">
-                                Nunca compartilhe seu e-mail de login com outra pessoa.
+                            <div class="mb-3 pt-3">
+                                <label for="InputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="InputEmail1" name="email">
                             </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
+                            <div class="mb-3">
+                                <label for="InputPassword1" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="InputPassword1" name="password">
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
+                                <button class="btn btn-outline-dark" type="submit">Entrar</button>
+                            </div>
                     </forms>
                 </div>
             </div>

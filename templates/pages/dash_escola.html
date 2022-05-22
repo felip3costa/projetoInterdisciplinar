@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4 mt-4">
+                {% block sessao_a %} {% endblock %}
+            </div>
+
+            <div class="col-sm-8 mt-4">
+                {% block sessao_b %} {% endblock %}
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

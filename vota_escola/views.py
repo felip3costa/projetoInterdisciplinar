@@ -95,3 +95,59 @@ def login(request):
         'titulo_pagina': 'Acesso ao ambiente'
     }
     return render(request, 'login.html', dados)
+
+
+def dash_aluno(request):
+    dados = {
+        'nome_formulario': 'login',
+        'titulo_pagina': 'Acesso ao ambiente'
+    }
+    return render(request, 'pages/dash_aluno.html', dados)
+
+
+def dash_escola(request):
+    dados = {
+        'nome_formulario': 'login',
+        'titulo_pagina': 'Acesso ao ambiente'
+    }
+    return render(request, 'pages/escola/inicio.html', dados)
+
+
+def e_info(request):
+    dados = {
+        'nome_formulario': 'Dados da Cadastrais',
+        'titulo_pagina': 'Dados da Cadastrais'
+    }
+    return render(request, 'pages/escola/informacoes.html', dados)
+
+
+def e_turmas(request):
+    dados = {
+        'nome_formulario': 'Gerenciamento de Turmas',
+        'titulo_pagina': 'Gerenciamento de Turmas'
+    }
+    return render(request, 'pages/escola/turmas.html', dados)
+
+
+def e_alunos(request):
+    dados = {
+        'nome_formulario': 'Gerenciamento de Alunos',
+        'titulo_pagina': 'Gerenciamento de Alunos'
+    }
+    return render(request, 'pages/escola/alunos.html', dados)
+
+
+def e_anoeleitoral(request):
+    dados = {
+        'nome_formulario': 'Gerenciamento de Eleições',
+        'titulo_pagina': 'Gerenciamento de Eleições'
+    }
+    return render(request, 'pages/escola/anoeleitoral.html', dados)
+
+
+def e_resultado(request):
+    dados = {
+        'nome_formulario': 'Resultado das Eleições',
+        'titulo_pagina': 'Resultado das Eleições'
+    }
+    return render(request, 'pages/escola/resultados.html', dados)

@@ -1,0 +1,67 @@
+{% extends 'pages/dash_escola.html' %}
+{% block sessao_a %}
+    {% include 'pages/escola/comuns/menu.html' %}
+{% endblock %}
+
+
+{% block sessao_b %}
+    <div class="container-lg bg-light rounded pb-2 pt-2">
+
+        <h4 class="mb-2 ">{{ nome_formulario }}</h4>
+
+        <hr class="dropdown-divider bg-dark">
+
+        <form class="cadastro" action="{% url 'cadastrar_escola' %}" method="POST">
+            {% csrf_token %}
+            {% include 'partials/_alertas.html' %}
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="nome_escola" name="nome_escola" required>
+                <label for="nome_escola">Nome da Escola</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="rua" name="rua">
+                <label for="rua">Rua</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="numero" name="numero">
+                <label for="numero">Número</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="complemento" name="complemento">
+                <label for="complemento">Complemento</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="bairro" name="bairro">
+                <label for="bairro">Bairro</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="cidade" name="cidade">
+                <label for="cidade">Cidade</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="estado" name="estado">
+                <label for="estado">Estado</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="cnpj" name="cnpj">
+                <label for="cnpj">CNPJ</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="password" class="form-control" id="password" name="password" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="password" class="form-control" id="repassword" name="repassword" required>
+                <label for="repassword">Repeat Password</label>
+            </div>
+
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-outline-danger me-md-2" type="button">Voltar</button>
+                <button class="btn btn-outline-success" type="submit">Atualizar</button>
+            </div>
+        </form>
+
+    </div>
+{% endblock %}
+

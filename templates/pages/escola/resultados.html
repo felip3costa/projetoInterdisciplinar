@@ -1,0 +1,93 @@
+{% extends 'pages/dash_escola.html' %}
+{% block sessao_a %}
+    {% include 'pages/escola/comuns/menu.html' %}
+{% endblock %}
+
+{% block sessao_b %}
+    <div class="container-lg bg-light rounded pb-2 pt-2">
+
+        <h4 class="mb-2 ">{{ nome_formulario }}</h4>
+
+        <hr>
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col" class="text-center">#</th>
+                <th scope="col" class="text-center">Ano Eleitoral</th>
+                <th scope="col">Data Início</th>
+                <th scope="col">Data Fim</th>
+            </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                <th scope="row" class="text-center">3</th>
+                    <td class="text-center"><a href="" class="text-primary">2022</a> </td>
+                    <td>01/02/22 - 10:00</td>
+                    <td>15/02/22 - 10:00</td>
+                </tr>
+
+                <tr>
+                <th scope="row" class="text-center">2</th>
+                    <td class="text-center"><a href="" class="text-primary">2021</a></td>
+                    <td>01/02/21 - 10:00</td>
+                    <td>15/02/21 - 10:00</td>
+                </tr>
+
+                <tr>
+                    <th scope="row" class="text-center">1</th>
+                    <td class="text-center"><a href="" class="text-primary">2020</a></td>
+                    <td>01/02/20 - 10:00</td>
+                    <td>15/02/20 - 10:00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col" class="text-center">#</th>
+                <th scope="col" class="text-center">Código</th>
+                <th scope="col">Turma</th>
+                <th scope="col">Vencedor</th>
+            </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                <th scope="row" class="text-center">1</th>
+                    <td class="text-center"><a href="" class="text-primary">CC3NA</a></td>
+                    <td>Ciência da Computação 3º período - Noite Turma A</td>
+                    <td>[N095] - Ana Silva</td>
+                </tr>
+
+                <tr>
+                <th scope="row" class="text-center">2</th>
+                    <td class="text-center"><a href="" class="text-primary">CC3NB</a></td>
+                    <td>Ciência da Computação 3º período - Noite Turma B</td>
+                    <td>[N019] - Felipe Soares</td>
+                </tr>
+
+                <tr>
+                    <th scope="row" class="text-center">3</th>
+                    <td class="text-center"><a href="" class="text-primary">CC3DA</a></td>
+                    <td>Ciência da Computação 3º período - Dia Turma B</td>
+                    <td>[M512] - Italo Gonçalves</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <canvas id="chart" style="max-width: 500px;"></canvas>
+        </div>
+
+    </div>
+
+
+{% endblock %}
+
