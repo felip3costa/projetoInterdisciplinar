@@ -1,17 +1,50 @@
+<!-- EXTENDS HERDA A BASE -->
 {% extends 'base.html' %}
+
+<!-- INÌCIO DO CONTEÚDO -->
 {% block content %}
+
     <div class="container">
         <div class="row">
 
-            <div class="col-sm-4 mt-4">
-                {% block sessao_a %} {% endblock %}
+            <div class="col-sm-4 mt-4 bg-light rounded">
+
+                    <div class="row">
+
+                        <h4 class="fonte-base mb-2 pt-3">Bem vindo(a), Administrador!</h4>
+                    </div>
+
+                    <hr>
+
+                    <div class="row ">
+                        <p>
+                            Podemos reservar essa área para deixar alguma mensagem importante.
+                            <br>
+                            <br>
+                            Como por exemplo:
+                        </p>
+                    </div>
+
+                    <hr>
+
+                    <div class="rounded bg-dark mb-3 text-center pt-3 pb-2">
+                        <p class="text-white fw-bold">
+                            O resultado das eleições já estão disponíveis, visualize <a href="#">clicando aqui</a>.
+                        </p>
+                    </div>
+
+                    {% block sessao_a %} {% endblock %}
+
             </div>
 
             <div class="col-sm-8 mt-4">
+
                 {% block sessao_b %} {% endblock %}
+
             </div>
 
         </div>
     </div>
 
+<!-- FIM DO CONTEÚDO -->
 {% endblock %}

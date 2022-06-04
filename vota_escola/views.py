@@ -105,7 +105,7 @@ def dash_aluno(request):
     return render(request, 'pages/dash_aluno.html', dados)
 
 
-def dash_escola(request):
+def e_dash(request):
     dados = {
         'nome_formulario': 'login',
         'titulo_pagina': 'Acesso ao ambiente'
@@ -151,3 +151,27 @@ def e_resultado(request):
         'titulo_pagina': 'Resultado das Eleições'
     }
     return render(request, 'pages/escola/resultados.html', dados)
+
+def a_dash(request):
+    dados = {
+        'titulo_pagina': 'Dashboard do Aluno'
+    }
+    return render(request, 'pages/aluno/inicio.html', dados)
+
+def a_candidatar(request):
+    dados = {
+        'titulo_pagina': 'Candidate-se'
+    }
+    return render(request, 'pages/aluno/candidatar.html', dados)
+
+def a_votar(request):
+    dados = {
+        'titulo_pagina': 'Votar'
+    }
+    return render(request, 'pages/aluno/votar.html', dados)
+
+def a_dados(request):
+    dados = {
+        'titulo_pagina': 'Meus Dados'
+    }
+    return render(request, 'pages/aluno/meusdados.html', dados)
